@@ -5,7 +5,7 @@ module MailgunRails
   class Client
     attr_reader :api_key, :domain, :verify_ssl, :region
 
-    def initialize(api_key, domain, verify_ssl = true, region = nil)
+    def initialize(api_key, domain, verify_ssl = true, region = 'eu')
       @api_key = api_key
       @domain = domain
       @verify_ssl = verify_ssl
